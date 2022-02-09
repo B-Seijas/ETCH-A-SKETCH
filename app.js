@@ -41,8 +41,8 @@ const active = () => {
         case 'randomColors':
           e.target.style.backgroundColor = randomColor();
           break;
-        case 'shading':
-          e.target.style.backgroundColor = shading(crntClr);
+         //case 'shading':
+         // e.target.style.backgroundColor = shading(crntClr); 
         case 'erazer':
           e.target.style.backgroundColor = '#ffffff';
           break
