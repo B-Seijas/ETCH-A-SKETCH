@@ -19,7 +19,7 @@ drawGrid(gridsize)
 
 const clear = (request) => {
   if(request === 'resize'){
-    gridsize = prompt('please enter a new grid size of not more than 100', 50);
+    gridsize = prompt('please enter a new grid size of not more than 100', 64);
     if(gridsize > 100 || gridsize === null){
     gridsize = 100;
   }
@@ -70,4 +70,3 @@ const randomColor = () => {
     const randomB = Math.floor(Math.random() * 256)
     return `rgb(${randomR}, ${randomG}, ${randomB})`
 }
-
