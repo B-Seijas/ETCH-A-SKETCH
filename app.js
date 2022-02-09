@@ -43,6 +43,9 @@ const active = () => {
           break;
         case 'shading':
           e.target.style.backgroundColor = shading(crntClr);
+        case 'erazer':
+          e.target.style.backgroundColor = '#ffffff';
+          break
       }
     });
   });
@@ -57,9 +60,14 @@ buttons.forEach(button => {
     }
     else{
       currentMode = button.id;
-      clear(button.id);
     }
   });
 });
 
-let randomColor
+const randomColor = () => {
+  const randomR = Math.floor(Math.random() * 256)
+    const randomG = Math.floor(Math.random() * 256)
+    const randomB = Math.floor(Math.random() * 256)
+    return `rgb(${randomR}, ${randomG}, ${randomB})`
+}
+
